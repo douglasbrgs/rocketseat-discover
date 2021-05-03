@@ -1,0 +1,42 @@
+<!-- 
+    url
+
+    - Espera que o usuário digite uma url
+    - Irá validar se o valor digitado é uma url
+
+    # Atributos
+    - placeholder
+    - readonly/disabled
+    - value
+    - required 
+    - min-length / max-length
+    - size 
+    
+    - pattern
+    * exemplo: o usuário só poderá colocar domínio .com.br
+        * pattern =".*\.com\.br\/.*"
+
+    - list
+
+    - spellcheck
+        * habilita verificação ortográfica para este input
+        * exemplo: spellcheck="false"
+-->
+
+<datalist id="urlsData">
+    <option>http://meusite.com.br</option>
+    <option>https://meusite2.com.br</option>
+</datalist>
+
+<form action="">
+    <input
+        type="url"
+        placeholder="http://example.com.br"
+        pattern=".*\.com\.br\.*"
+        title="somente dominios .com.br serão aceitos"
+        required
+        list="urlsData"
+        spellcheck="false"
+    />
+    <button type="submit">Enviar</button>
+</form>

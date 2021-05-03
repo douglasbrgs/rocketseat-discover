@@ -1,0 +1,34 @@
+<!-- 
+
+    <input type="email" />
+    
+    - Espera que o usuário digite um email
+    - Irá validar se o valor digitado é um email
+
+    # Atributos
+
+    - placeholder
+    - readonly / disabled
+    - value
+    - required
+
+    - multiple
+        * um ou mais emails separado por virgulas
+
+    - minlength / maxlength
+    - size
+
+    - pattern
+        * pattern = ".+@rocketseat\.com\.br"
+
+    - list
+-->
+
+<form action="">
+    <datalist id="emailsList">
+        <option>douglas@rocketseat.com.br</option>
+        <option></option>
+    </datalist>
+    <input type="email" list="emailsList" />
+    <button type="submit">Enviar</button>
+</form>
